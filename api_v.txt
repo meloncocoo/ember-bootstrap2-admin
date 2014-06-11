@@ -1,0 +1,56 @@
+                                             api_v1_users GET        /api/v1/users(.:format)                                                                     api/v1/users#index
+                                                           POST       /api/v1/users(.:format)                                                                     api/v1/users#create
+                                           new_api_v1_user GET        /api/v1/users/new(.:format)                                                                 api/v1/users#new
+                                          edit_api_v1_user GET        /api/v1/users/:id/edit(.:format)                                                            api/v1/users#edit
+                                               api_v1_user GET        /api/v1/users/:id(.:format)                                                                 api/v1/users#show
+                                                           PATCH      /api/v1/users/:id(.:format)                                                                 api/v1/users#update
+                                                           PUT        /api/v1/users/:id(.:format)                                                                 api/v1/users#update
+                                                           DELETE     /api/v1/users/:id(.:format)                                                                 api/v1/users#destroy
+                                        api_v1_user_tokens GET        /api/v1/userTokens(.:format)                                                                api/v1/user_tokens#index
+                                                           POST       /api/v1/userTokens(.:format)                                                                api/v1/user_tokens#create
+                                     new_api_v1_user_token GET        /api/v1/userTokens/new(.:format)                                                            api/v1/user_tokens#new
+                                    edit_api_v1_user_token GET        /api/v1/userTokens/:id/edit(.:format)                                                       api/v1/user_tokens#edit
+                                         api_v1_user_token GET        /api/v1/userTokens/:id(.:format)                                                            api/v1/user_tokens#show
+                                                           PATCH      /api/v1/userTokens/:id(.:format)                                                            api/v1/user_tokens#update
+                                                           PUT        /api/v1/userTokens/:id(.:format)                                                            api/v1/user_tokens#update
+                                                           DELETE     /api/v1/userTokens/:id(.:format)                                                            api/v1/user_tokens#destroy
+                                        api_v1_bean_stores GET        /api/v1/beanStores(.:format)                                                                api/v1/bean_stores#index
+                                                           POST       /api/v1/beanStores(.:format)                                                                api/v1/bean_stores#create
+                                     new_api_v1_bean_store GET        /api/v1/beanStores/new(.:format)                                                            api/v1/bean_stores#new
+                                    edit_api_v1_bean_store GET        /api/v1/beanStores/:id/edit(.:format)                                                       api/v1/bean_stores#edit
+                                         api_v1_bean_store GET        /api/v1/beanStores/:id(.:format)                                                            api/v1/bean_stores#show
+                                                           PATCH      /api/v1/beanStores/:id(.:format)                                                            api/v1/bean_stores#update
+                                                           PUT        /api/v1/beanStores/:id(.:format)                                                            api/v1/bean_stores#update
+                                                           DELETE     /api/v1/beanStores/:id(.:format)                                                            api/v1/bean_stores#destroy
+                                    api_v1_bean_categories GET        /api/v1/beanCategories(.:format)                                                            api/v1/bean_categories#index
+                                                           POST       /api/v1/beanCategories(.:format)                                                            api/v1/bean_categories#create
+                                  new_api_v1_bean_category GET        /api/v1/beanCategories/new(.:format)                                                        api/v1/bean_categories#new
+                                 edit_api_v1_bean_category GET        /api/v1/beanCategories/:id/edit(.:format)                                                   api/v1/bean_categories#edit
+                                      api_v1_bean_category GET        /api/v1/beanCategories/:id(.:format)                                                        api/v1/bean_categories#show
+                                                           PATCH      /api/v1/beanCategories/:id(.:format)                                                        api/v1/bean_categories#update
+                                                           PUT        /api/v1/beanCategories/:id(.:format)                                                        api/v1/bean_categories#update
+                                                           DELETE     /api/v1/beanCategories/:id(.:format)                                                        api/v1/bean_categories#destroy
+                             api_v1_bean_element_resources GET        /api/v1/beanElementResources(.:format)                                                      api/v1/bean_element_resources#index
+                                                           POST       /api/v1/beanElementResources(.:format)                                                      api/v1/bean_element_resources#create
+                          new_api_v1_bean_element_resource GET        /api/v1/beanElementResources/new(.:format)                                                  api/v1/bean_element_resources#new
+                         edit_api_v1_bean_element_resource GET        /api/v1/beanElementResources/:id/edit(.:format)                                             api/v1/bean_element_resources#edit
+                              api_v1_bean_element_resource GET        /api/v1/beanElementResources/:id(.:format)                                                  api/v1/bean_element_resources#show
+                                                           PATCH      /api/v1/beanElementResources/:id(.:format)                                                  api/v1/bean_element_resources#update
+                                                           PUT        /api/v1/beanElementResources/:id(.:format)                                                  api/v1/bean_element_resources#update
+                                                           DELETE     /api/v1/beanElementResources/:id(.:format)                                                  api/v1/bean_element_resources#destroy
+                api_v1_bean_element_bean_element_resources GET        /api/v1/beanElements/:bean_element_id/beanElementResources(.:format)                        api/v1/bean_element_resources#index
+                                                           POST       /api/v1/beanElements/:bean_element_id/beanElementResources(.:format)                        api/v1/bean_element_resources#create
+             new_api_v1_bean_element_bean_element_resource GET        /api/v1/beanElements/:bean_element_id/beanElementResources/new(.:format)                    api/v1/bean_element_resources#new
+            edit_api_v1_bean_element_bean_element_resource GET        /api/v1/beanElements/:bean_element_id/beanElementResources/:id/edit(.:format)               api/v1/bean_element_resources#edit
+                 api_v1_bean_element_bean_element_resource GET        /api/v1/beanElements/:bean_element_id/beanElementResources/:id(.:format)                    api/v1/bean_element_resources#show
+                                                           PATCH      /api/v1/beanElements/:bean_element_id/beanElementResources/:id(.:format)                    api/v1/bean_element_resources#update
+                                                           PUT        /api/v1/beanElements/:bean_element_id/beanElementResources/:id(.:format)                    api/v1/bean_element_resources#update
+                                                           DELETE     /api/v1/beanElements/:bean_element_id/beanElementResources/:id(.:format)                    api/v1/bean_element_resources#destroy
+                                      api_v1_bean_elements GET        /api/v1/beanElements(.:format)                                                              api/v1/bean_elements#index
+                                                           POST       /api/v1/beanElements(.:format)                                                              api/v1/bean_elements#create
+                                   new_api_v1_bean_element GET        /api/v1/beanElements/new(.:format)                                                          api/v1/bean_elements#new
+                                  edit_api_v1_bean_element GET        /api/v1/beanElements/:id/edit(.:format)                                                     api/v1/bean_elements#edit
+                                       api_v1_bean_element GET        /api/v1/beanElements/:id(.:format)                                                          api/v1/bean_elements#show
+                                                           PATCH      /api/v1/beanElements/:id(.:format)                                                          api/v1/bean_elements#update
+                                                           PUT        /api/v1/beanElements/:id(.:format)                                                          api/v1/bean_elements#update
+                                                           DELETE     /api/v1/beanElements/:id(.:format)                                                          api/v1/bean_elements#destroy
