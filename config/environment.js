@@ -11,6 +11,8 @@ window.ENV = window.ENV || {};
 
 window.ENV.MODEL_FACTORY_INJECTIONS = true;
 
+window.MODULE_PREFIX = "appkit";
+
 window.ENV.NAMESPACE = "api";
 
 window.ENV.HOST = "http://localhost:8000";

@@ -4,10 +4,28 @@
     <div class="span6">
         <div class="widget green">
             <div class="widget-title"><h4>表单提交</h4></div>
-            <div class="widget-body">
-                {{#em-form model=model class="form-horizontal"}}
-                    {{bs-form-control-group label="用户名:" property="userName"}}
-                    {{bs-form-control-group label="密码:" property="password"}}
+            <div class="widget-body form">
+                {{#em-form class="form-horizontal" model=model}}
+                    {{em-form-control-group label="用户名：" property="userName"}}
+                    {{em-form-control-group label="密码" property="password" type="password"}}
+                    {{#em-form-actions}}
+                        <button type="submit" class="btn btn-success" {{action 'saveUser' model}}>提交 <i class="fa fa-save"></i></button>
+                    {{/em-form-actions}}
+                {{/em-form}}
+            </div>
+        </div>
+    </div>
+    <div class="span6">
+        <div class="widget green">
+            <div class="widget-title"><h4>邮件</h4></div>
+            <div class="widget-body form">
+                {{#em-form class="form-horizontal" model=post}}
+                    {{em-form-control-group label="标题：" property="title"}}
+                    {{em-form-control-group label="内容：" property="body"}}
+                    {{em-form-control-group label="作者：" property="author.name"}}
+                    {{#em-form-actions}}
+                        <button type="submit" class="btn btn-success" {{action 'savePost' post}}>提交 <i class="fa fa-save"></i></button>
+                    {{/em-form-actions}}
                 {{/em-form}}
             </div>
         </div>

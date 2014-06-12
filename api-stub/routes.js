@@ -26,6 +26,14 @@ module.exports = function(server) {
             res.send(post);
         });
 
+        server.post('/posts', function(req, res) {
+            res.send({});
+        });
+
+        server.put('/posts/:id', function(req, res) {
+            res.send({});
+        });
+
         // Get Application Menus
         server.get('/menus', function(req, res) {
             var data = {
@@ -76,5 +84,9 @@ module.exports = function(server) {
             };
             res.send(data);
         });
+
+        server.put('/users/:id', function(req, res) {
+            res.send({});
+        })
     });
 };
